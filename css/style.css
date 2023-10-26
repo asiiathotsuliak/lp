@@ -1,0 +1,279 @@
+@import url(reset.css);
+@import url('https://fonts.cdnfonts.com/css/hagrid-trial');
+@import url('https://fonts.cdnfonts.com/css/averia-serif-libre');
+
+/* font-family: 'Hagrid Trial', sans-serif; */
+/* font-family: 'Hagrid Text Trial', sans-serif; */
+/* font-family: 'Averia Serif Libre', sans-seri; */
+
+body {
+    font-family: 'Hagrid Text Trial', sans-serif;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.container {
+    max-width: 1450px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    padding: 0.6em 5em;
+
+    font-size: 1em;
+    align-items: center;
+}
+
+.btn-add-to-cart {
+    border: 1px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 0.7em;
+    color: black;
+}
+
+/*  Headiings */
+
+.heading-page {
+    font-size: 2em;
+    margin-bottom: 2.5em;
+}
+
+/* Header-top */
+
+.header-top-inner {
+    background-color: #FE7BE2;
+    padding: 0.7em;
+}
+
+.header-top-inner p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #99197D;
+    text-align: center;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+.header-inner img {
+    height: 1em;
+}
+
+/* Intro */
+
+.intro {
+    padding: 5em 0 1em 0;
+}
+
+.intro-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+}
+
+.intro-content {
+    padding: 1em;
+}
+
+.intro-h1 {
+    font-size: 6em;
+    line-height: 90%;
+    color: white;
+}
+
+.intro-p {
+    color: white;
+    font-family: 'Averia Serif Libre', sans-seri;
+    margin-top: 5em;
+}
+
+/* Books */
+
+.books-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+    border: 1px solid black;
+    padding: 2em;
+    text-align: center;
+}
+
+.item img {
+    margin-bottom: 2em;
+}
+
+.book-name {
+    line-height: 110%;
+    margin-bottom: 0.4em;
+}
+
+.book-info {
+    font-family: 'Averia Serif Libre', sans-seri;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+/* Reviews */
+
+.reviews-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+}
+
+.reviews-content {
+    padding: 1em;
+}
+
+.reviews-h1 {
+    font-size: 2.5em;
+    line-height: 100%;
+    color: white;
+}
+
+/* Social-media */
+
+.social-media-inner {
+    background-color: #FFB1EF;
+    font-size: 6em;
+    line-height: 90%;
+    color: white;
+    padding: 0.1em;
+}
+
+/* Footer */
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFB1EF;
+    padding: 11em 1em 1em 1em;
+}
+
+.footer-info {
+    display: flex;
+    column-gap: 2em;
+}
+
+.footer-info p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+/* Media 500 */
+
+@media (max-width:500px) {
+
+    body {
+        font-size: 3vw;
+    }
+
+    /* Buttoons */
+
+    .button {
+        align-items: center;
+    }
+
+    .btn-add-to-cart {
+        font-size: 1em;
+    }
+
+    /*  Headiings */
+
+    .heading-page {
+        font-size: 4em;
+        margin-bottom: 2em;
+    }
+
+
+
+    /* Intro */
+
+    .intro-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intro-p {
+        font-size: 1.5em;
+    }
+
+    /* Books */
+
+    .books-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .book-name {
+        font-size: 1.5em;
+    }
+
+    .book-info {
+        font-size: 1.5em;
+    }
+
+    .books a {
+        display: grid;
+    }
+
+    /* Reviews */
+
+    .reviews-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Social-media */
+
+    .social-media-inner {
+        font-size: 4.5em;
+    }
+
+    /* Footer */
+
+    .footer-inner {
+        display: block;
+    }
+
+    .footer img {
+        margin-bottom: 1em;
+    }
+
+    .footer-info {
+        display: block;
+    }
+
+    .footer-info p {
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+
+
+
+}
